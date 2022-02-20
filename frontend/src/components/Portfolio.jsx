@@ -45,7 +45,6 @@ export const Portfolio = () => {
         options.forEach(fund => {
             reqPayload.ticker += riskMappingToFund[fund][Math.floor(Math.random() * riskMappingToFund[fund].length)] + ","
         })
-        setTickers(reqPayload.ticker);
         if (reqPayload.ticker.match(",").length === 1 || reqPayload.ticker.match(",").length === 1) reqPayload.ticker = reqPayload.ticker.substr(0, reqPayload.ticker.length - 1)
         console.log((reqPayload))
         setFetchingData(true)
