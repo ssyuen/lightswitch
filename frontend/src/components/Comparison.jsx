@@ -264,8 +264,17 @@ export const Comparison = () => {
                             {searching ? <Spin/> :
                                 <List
                                     dataSource={tickerValues}
+                                    grid={{
+                                        gutter: 16,
+                                        xs: 1,
+                                        sm: 2,
+                                        md: 4,
+                                        lg: 4,
+                                        xl: 6,
+                                        xxl: 3,
+                                    }}
                                     renderItem={item => (
-                                        <List.Item>
+                                        <List.Item span={12}>
                                             <Card title={item.price.shortName}>
                                                 <ul style={{listStyle: "none", float: "left"}}>
                                                     <li>Price: {item.price.regularMarketPrice}</li>
@@ -288,9 +297,18 @@ export const Comparison = () => {
                                         onClick={handleFundSwitch}/>
                             </Typography>
                             {fetchedDefaultBlackRockData ? <List
+                                grid={{
+                                    gutter: 16,
+                                    xs: 1,
+                                    sm: 2,
+                                    md: 4,
+                                    lg: 4,
+                                    xl: 6,
+                                    xxl: 3,
+                                }}
                                 dataSource={blackRockFunds}
                                 renderItem={item => (
-                                    <List.Item>
+                                    <List.Item span={12}>
                                         <Card title={item.price.shortName}>
                                             <ul style={{listStyle: "none", float: "left"}}>
                                                 <li><Tooltip
