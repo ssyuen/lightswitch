@@ -52,21 +52,21 @@ function App() {
                             shift over to sustainable investing.
                         </Paragraph>
                     </Typography>
-                    <Row gutter={16}>
-                        <Col span={8}>
-                            <Card span={8} title={"Shifting client requirements"}>Future financial decision-makers are
+                    <Row gutter={1}>
+                        <Col xs={{span: 24}} sm={{span: 14}} lg={{span: 13}} xl={{span: 8}}>
+                            <Card title={"Shifting client requirements"}>Future financial decision-makers are
                                 asking
                                 more of
                                 companies and are seeking more sustainable investment solutions.</Card>
                         </Col>
-                        <Col span={8}>
-                            <Card span={8} title={"Government influence"}>Regulators and governments are expanding their
+                        <Col xs={{span: 24}} sm={{span: 14}} lg={{span: 13}} xl={{span: 8}}>
+                            <Card title={"Government influence"}>Regulators and governments are expanding their
                                 focus
                                 on
                                 incorporating sustainability into investment information and decision making.</Card>
                         </Col>
-                        <Col span={8}>
-                            <Card span={8} title={"Portfolio implications"}>There is growing recognition that ESG
+                        <Col xs={{span: 24}} sm={{span: 14}} lg={{span: 13}} xl={{span: 8}}>
+                            <Card title={"Portfolio implications"}>There is growing recognition that ESG
                                 research and
                                 analysis can potentially identify investment risks and help generate excess returns.
                             </Card>
@@ -76,7 +76,8 @@ function App() {
 
                 </Content>
                 <Footer style={{textAlign: "center"}}>
-                    Ant Design ©2018 Created by Ant UED
+                    <BulbOutlined/>
+                    lightswitch ©2022 Created by Samuel Yuen
                 </Footer>
             </Layout>
         </div>
